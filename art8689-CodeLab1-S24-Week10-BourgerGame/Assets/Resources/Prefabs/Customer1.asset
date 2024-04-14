@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d762d4af60271e41a177dfd7253a530, type: 3}
+  m_Name: Customer1
+  m_EditorClassIdentifier: 
+  path: Prefabs/Customer1
+  bun: {fileID: 1047705775566078695, guid: d0b8b3785ea0290478b0ed4fddf08ce2, type: 3}
+  lettuce: {fileID: 3880316176937243632, guid: f7487b5556f5ba0439a1ebdec679a31b, type: 3}
+  meat: {fileID: 4103281581181116703, guid: 203540944ddbc8c4fb08ffcff31edc0e, type: 3}
+  cheese: {fileID: 6193500843298466897, guid: 562e347d8cd30644faca19bffe4bfeac, type: 3}
