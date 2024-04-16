@@ -93,6 +93,8 @@ public class DictionaryScript : MonoBehaviour
             
         }
 
+       
+
         foreach (KeyValuePair<string, int> ingredient in customer.customerburger1)
         {
             foreach (KeyValuePair<string, int> ingredientPlayer in ingredients)
