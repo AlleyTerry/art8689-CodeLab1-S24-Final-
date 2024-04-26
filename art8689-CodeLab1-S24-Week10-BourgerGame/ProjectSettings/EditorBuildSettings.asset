@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BurgerScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/LevelScene.unity
+    guid: 9c1071f2400199248ae9ed3a8695d4c2
   m_configObjects: {}

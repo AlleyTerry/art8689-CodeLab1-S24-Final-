@@ -8,8 +8,15 @@ public class BackToDiner : MonoBehaviour
     public void BackToDinerButton()
     {
         SceneManager.LoadScene("LevelScene");
-        ASCIILevelLoader.instance.newButton.SetActive(true);
+        ASCIILevelLoader.instance.CurrentLevel++;
         //Invoke("NewLevel", 2f );
+    }
+
+    public void NewLevel()
+    {
+        Debug.Log("this was loaded");
+        ASCIILevelLoader.instance.CurrentLevel++;
+        
     }
 
    

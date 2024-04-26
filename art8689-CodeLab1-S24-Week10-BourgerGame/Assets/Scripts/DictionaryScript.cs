@@ -4,6 +4,7 @@ using Unity.Mathematics;
 using UnityEngine;
 using Unity.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class DictionaryScript : MonoBehaviour
 {

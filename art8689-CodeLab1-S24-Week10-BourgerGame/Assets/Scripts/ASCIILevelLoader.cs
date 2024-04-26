@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -29,7 +30,7 @@ public class ASCIILevelLoader : MonoBehaviour
     public static ASCIILevelLoader instance;
     
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         if (instance == null)
         {
@@ -40,7 +41,10 @@ public class ASCIILevelLoader : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
 
+    private void Start()
+    {
         FILE_PATH = Application.dataPath + "/Levels/LevelNum.txt";
 
         LoadLevel();
@@ -97,11 +101,5 @@ public class ASCIILevelLoader : MonoBehaviour
                 }
             }
         }
-    }
-    public void NewLevel()
-    {
-        Debug.Log("this is being loaded");
-        CurrentLevel++;
-        
     }
 }
