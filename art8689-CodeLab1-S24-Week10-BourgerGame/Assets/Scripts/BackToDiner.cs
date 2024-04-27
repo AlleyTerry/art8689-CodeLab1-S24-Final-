@@ -7,8 +7,9 @@ public class BackToDiner : MonoBehaviour
 {
     public void BackToDinerButton()
     {
+        GameManager.instance.IncreaseLevel();
         SceneManager.LoadScene("LevelScene");
-        ASCIILevelLoader.instance.CurrentLevel++;
+        
         //Invoke("NewLevel", 2f );
     }
 
