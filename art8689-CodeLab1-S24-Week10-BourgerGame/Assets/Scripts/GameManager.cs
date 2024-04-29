@@ -7,7 +7,9 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public float timer = 60;
+    public float timer = 3;
+    public int monies = 0;
+    public TextMeshProUGUI moniesText;
 
     public TextMeshProUGUI timerText;
     public TextMeshProUGUI barkText;
@@ -42,6 +44,19 @@ public class GameManager : MonoBehaviour
     {
         timer -= Time.deltaTime;
         timerText.text = MathF.Floor(timer ) + "";
+        if (timer <= 0)
+        {
+            SceneManager.LoadScene("EndScene");
+            if (monies == 0)
+            {
+                Camera.main.backgroundColor = Color.green;
+            }
+            else
+            {
+                Camera.main.backgroundColor = Color.red;
+            }
+            timerText.text = 0 + " DAY END";
+        }
     }
 
     private void ProgressDialoge()

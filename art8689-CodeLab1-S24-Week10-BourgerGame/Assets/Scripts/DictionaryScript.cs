@@ -123,11 +123,13 @@ public class DictionaryScript : MonoBehaviour
         if (wrongBurger > 0)
         {
             order.text = "oh... that's not...";
-            
+            GameManager.instance.monies -= 10;
+
         }
         else
         {
             order.text = "yayyyy my burger yum!";
+            GameManager.instance.monies += 10;
         }
         ingredients.Clear();
         numbers.Clear();

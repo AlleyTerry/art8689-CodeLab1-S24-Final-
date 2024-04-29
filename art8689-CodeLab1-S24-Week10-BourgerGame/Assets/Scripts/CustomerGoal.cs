@@ -17,9 +17,6 @@ public class CustomerGoal : MonoBehaviour
             
             Debug.Log("level was loaded");
             SceneManager.LoadScene("BurgerScene");
-            
-            
-
         }
     }
 }
