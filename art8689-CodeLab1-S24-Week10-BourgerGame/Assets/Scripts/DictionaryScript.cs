@@ -124,12 +124,14 @@ public class DictionaryScript : MonoBehaviour
         {
             order.text = "oh... that's not...";
             GameManager.instance.monies -= 10;
+            GameManager.instance.moniesText.text = GameManager.instance.monies + "";
 
         }
         else
         {
             order.text = "yayyyy my burger yum!";
             GameManager.instance.monies += 10;
+            GameManager.instance.moniesText.text = GameManager.instance.monies + "";
         }
         ingredients.Clear();
         numbers.Clear();
