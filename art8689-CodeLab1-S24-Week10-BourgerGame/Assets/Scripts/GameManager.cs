@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
     public List<String> barkList = new List<string>();
 
     public int barkNumber;
+
+    public int levelNumber = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,10 +46,10 @@ public class GameManager : MonoBehaviour
     {
         timer -= Time.deltaTime;
         timerText.text = MathF.Floor(timer ) + "";
-        if (timer <= 0)
+        if (timer <= 0 || levelNumber == 4)
         {
             SceneManager.LoadScene("EndScene");
-            if (monies == 0)
+            if (monies >= 0)
             {
                 Camera.main.backgroundColor = Color.green;
             }
@@ -75,6 +77,7 @@ public class GameManager : MonoBehaviour
 
     private void LoadLevel()
     {
+        levelNumber++;
         ASCIILevelLoader.instance.CurrentLevel++;
     }
 }

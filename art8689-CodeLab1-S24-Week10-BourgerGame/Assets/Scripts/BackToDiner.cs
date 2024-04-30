@@ -12,13 +12,5 @@ public class BackToDiner : MonoBehaviour
         
         //Invoke("NewLevel", 2f );
     }
-
-    public void NewLevel()
-    {
-        Debug.Log("this was loaded");
-        ASCIILevelLoader.instance.CurrentLevel++;
-        
-    }
-
    
 }
